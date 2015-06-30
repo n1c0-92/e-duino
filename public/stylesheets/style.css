@@ -1,5 +1,5 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Open Sans', sans-serif;
   margin:0px;
 }
 a {
@@ -9,13 +9,15 @@ h4{
 	color:#ccc;
 }
 .eduino{
-	background-color: #006;
+	background-color: #cc
+	;
 	width: 20px;
 	height: 20px;
 }
 nav{
 	width:100%;
 	height: 60px;
+	position: fixed;
 
 }
 .navs{
@@ -36,7 +38,7 @@ nav{
 	font-size: 20px;
 }
 .nav-left .tit-princ{
-	color:#555;
+	color:#ccc;
 }
 .img-eduino-ico{
 	vertical-align: middle;
@@ -46,28 +48,34 @@ nav{
 }
 .nav-right a{
 	text-decoration: none;
-	color:#066;
+	color:#ccc;
 	padding-top: 30px;
 }
 .one{
-	background-image:url("/images/arduino316.jpg");
+	background-image:url("/images/arduino_uno_test.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width:100%;
+	filter: grayscale(100%);
 	background-attachment: fixed;
-	opacity: .8;
-	height:500px;
+	filter: blur(5px);
+	height:600px;
 	color:#fff;
 	font-size: 30px;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	text-shadow: 0.01em 0.01em #333;
 	vertical-align: middle;
+	opacity: 0.8;
 }
 .one .center-label{
-	 position: absolute;
- left: 50%;
- top: 50%;
- width: 400px;
- height: 200px;
- margin: -100px 0 0 -200px;auto;
+	position: absolute;
+
+	left: 50%;
+	top: 50%;
+	width: 400px;
+	height: 200px;
+	margin: -100px 0 0 -200px;auto;
 }
 .two{
 	text-align: center;
