@@ -1,33 +1,37 @@
 extends layout
-
 block content
 	nav
-		.nav-left 
-			p Ardunitwo
-		.nav-right
-			p User
-	.one
-		.center-label
-		.down
-	.two
-		.two-one
-		h2 Paso 1
-		h4 Elige una placa
-		select
-			option Arduino 5sdfsdf
-
-		.two-two
-			.this-art
-				.this-art-tit
-					h3 Este artículo
-				.this-art-img
-			.descript
-				h3
-				h4
-				p
-			.your-kit
-				.your-kit-tit
-					h3 Tu kit
-				.your-kit-img
-		.two-three
-		h4 Ir al paso 2
+		.navs
+			a(href="index")
+				.nav-left
+					img.img-eduino-ico(src="/images/eduino2.svg") 
+					.tit-princ
+						p E-duino
+			.nav-right
+				a(href="user")
+					p User
+	.container
+		.one 
+			.center-label Armá tu kit arduino
+			.down
+		.two
+			.two-one
+			h2 Paso 1
+			h4 Elegí una placa
+			select
+				option Arduino 5sdfsdf
+			.two-two
+				.this-art
+					.this-art-tit
+						h3 Este artículo
+					.this-art-img
+				.descript
+					h3
+					h4
+					p
+				.your-kit
+					.your-kit-tit
+						h3 Tu kit
+					.your-kit-img
+			.two-three
+			h4 Ir al paso 2
