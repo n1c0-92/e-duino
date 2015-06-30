@@ -1,15 +1,15 @@
 extends layout
 block content
 	nav
-		.navs
-			a(href="index")
-				.nav-left
-					img.img-eduino-ico(src="/images/eduino2.svg") 
-					.tit-princ
-						p E-duino
-			.nav-right
-				a(href="user")
-					p User
+		a(href="index")
+			.navs.nav-left
+				img.img-eduino-ico(src="/images/eduino3.svg") 
+				.tit-princ
+					h1 E-duino
+		.navs.nav-right
+			a(href="user")
+				p User
+				.circular
 	.container
 		.one 
 			.center-label Armá tu kit arduino
@@ -21,7 +21,7 @@ block content
 				select
 					option Arduino 5sdfsdf
 			.two-two
-				.this-art
+				.this-art.col.col-2
 					.this-art-tit
 						h3 Este artículo
 					.this-art-img
@@ -29,9 +29,10 @@ block content
 					h3
 					h4
 					p
-				.your-kit
+				.your-kit.col.col-2
 					.your-kit-tit
 						h3 Tu kit
 					.your-kit-img
 			.two-three
-			h4 Ir al paso 2
+				h4 Ir al paso 2
+				img(src="/images/abajo.png")
