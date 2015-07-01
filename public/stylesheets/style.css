@@ -3,7 +3,11 @@ body {
   margin:0px;
 }
 a {
-  color: #00B7FF;
+  text-decoration: none;
+}
+ul
+{
+    list-style-type:none;
 }
 h1{
 	font-size: 16px;
@@ -12,16 +16,52 @@ h1{
 h4{
 	color:#ccc;
 }
-.circular {
-	width: 50px;
-	height: 50px;
+footer{
+	position:fixed;
+	pointer-events:none;
+	left:0px;
+	bottom:0px;
+    height:60px;
+    width:100%;
+    background: transparent;
+}
+.center{
+	text-align: center;
+}
+.circular{
+	
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
+}
+.circular.user-img{
+	width: 50px;
+	height: 50px;
 	background: url(/images/mujer-2.jpg) no-repeat;
 	background-size: 150%;
 	display: inline-block;
-	 }
+	}
+.circular.answer-img{
+	width: 25px;
+	height: 25px;
+	background: url(/images/answer.png) no-repeat;
+	background-size: 100%;
+	display: inline-block;
+	}
+.circular.this-art-img{
+	width: 100px;
+	height: 100px;
+	background: url(/images/arduino-gemma.jpg) no-repeat;
+	background-size: 200%;
+	display: inline-block;
+}
+.your-kit-img{
+	width: 100px;
+	height: 100px;
+	background: url(/images/arduino-gemma.jpg) no-repeat;
+	background-size: 200%;
+	display: inline-block;
+}
 .eduino{
 	background-color: #ccc
 	;
@@ -30,7 +70,7 @@ h4{
 }
 nav{
 	width:100%;
-
+	pointer-events:none;
 	position: fixed;
 	z-index: 20;
 }
@@ -46,6 +86,7 @@ div.nav-right a p{
 .navs{
 	padding-left: 30px;
 	padding-right: 30px;
+	pointer-events:all;
 }
 .nav-left{
 	float:left;
@@ -75,13 +116,14 @@ div.nav-right a p{
 }
 .one{
 	background-image:url("/images/arduino_uno_test.jpg");
+	
 	background-size: 100%;
 	background-repeat: no-repeat;
 	width:100%;
 	filter: grayscale(100%);
 	background-attachment: fixed;
 	filter: blur(5px);
-	height:600px;
+	height:700px;
 	color:#fff;
 	font-size: 30px;
 	text-align: center;
@@ -118,4 +160,125 @@ div.nav-right a p{
 .two-three img{
 	width: 30px;
 	height: 30px;
+}
+/* Modal login */
+.modalmask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalmask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalbox{
+    width: 400px;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius:3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;    
+}
+.movedown {
+    margin: 0 auto;
+}
+.rotate {
+    margin: 10% auto;
+    -webkit-transform: scale(-5,-5);
+    transform: scale(-5,-5);
+}
+.resize {
+    margin: 10% auto;
+    width:0;
+    height:0;
+}
+.modalmask:target .movedown{       
+    margin:10% auto;
+}
+.modalmask:target .rotate{     
+    transform: rotate(360deg) scale(1,1);
+    -webkit-transform: rotate(360deg) scale(1,1);
+}
+.modalmask:target .resize{
+    width:400px;
+    height:200px;
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    top: 1px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:3px;
+}
+.close:hover {
+    background: #1D7257;
+    color:#222;
+}
+.modalbox h2{
+	text-align: center;
+}
+
+.boton{
+	vertical-align:middle;
+	margin: 20px;
+	padding:20px;
+	background-color: #1D7257;
+	text-decoration: none;
+	color:#fff;	
+}
+.boton a{
+	text-decoration: none;
+	color:#fff;
+}
+/*tooltip*/
+a.tooltips {
+  position: relative;
+  display: inline;
+}
+a.tooltips span {
+  position: absolute;
+
+  color: #FFFFFF;
+  background: #000000;
+  height: 100px;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 6px;
+}
+a.tooltips span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #000000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+a:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.8;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -76px;
+  z-index: 999;
 }

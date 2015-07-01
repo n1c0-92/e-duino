@@ -7,15 +7,30 @@ block content
 				.tit-princ
 					h1 E-duino
 		.navs.nav-right
-			a(href="user")
-				p User
-				.circular
+			ul
+				li
+					a(href="#user")
+						p User
+						.circular.user-img
+	.modalmask(id="user")
+		.modalbox.movedown.center
+			a(href="#close", title="close", class="close") X
+
+			h2 Login
+			.log-user Usuario
+			.log-user-inp
+				input
+			.log-pass Contraseña
+			.log-pass-inp
+				input
+			.log-btn.boton
+				a(href="micuenta") Entrar
 	.container
-		.one 
+		section.one 
 			.center-label Armá tu kit arduino
 			.down
-		.two
-			.two-one.wow
+		section.two.wow.bounceInUp(data-wow-duration="2s", data-wow-delay="5s")
+			.two-one
 				h2 Paso 1
 				h4 Elegí una placa
 				select
@@ -23,8 +38,8 @@ block content
 			.two-two
 				.this-art.col.col-2
 					.this-art-tit
-						h3 Este artículo
-					.this-art-img
+						h3 Artículo seleccionado
+					.this-art-img.circular
 				.descript
 					h3
 					h4
@@ -32,7 +47,37 @@ block content
 				.your-kit.col.col-2
 					.your-kit-tit
 						h3 Tu kit
-					.your-kit-img
+					.your-kit-img.circular
 			.two-three
-				h4 Ir al paso 2
+				a(href="#Ancla")
+					h4 Ir al paso 2
+				a(href="#Ancla")
+					img(src="/images/abajo.png")
+		a(name="Ancla")
+		section.two.wow.bounceInUp(data-wow-duration="2s", data-wow-delay="5s")
+			.two-one
+				h2 Paso 2
+				h4 Elegí una placa
+				select
+					option Arduino 5sdfsdf
+			.two-two
+				.this-art.col.col-2
+					.this-art-tit
+						h3 Artículo seleccionado
+					.this-art-img.circular
+				.descript
+					h3
+					h4
+					p
+				.your-kit.col.col-2
+					.your-kit-tit
+						h3 Tu kit
+					.your-kit-img.circular
+			.two-three
+				h4 Ir al paso 3
 				img(src="/images/abajo.png")
+	footer
+		.navs.nav-right
+			a.tooltips
+				span baje para seguir
+				.circular.answer-img
