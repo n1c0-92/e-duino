@@ -5,6 +5,9 @@ body {
 a {
   text-decoration: none;
 }
+input{
+	height: 25px;
+}
 ul
 {
     list-style-type:none;
@@ -90,6 +93,7 @@ div.nav-right a p{
 }
 .nav-left{
 	float:left;
+	margin-top: 20px;
 }
 .nav-left img{
 	width:50px; 
@@ -116,7 +120,7 @@ div.nav-right a p{
 }
 .one{
 	background-image:url("/images/arduino_uno_test.jpg");
-	
+
 	background-size: 100%;
 	background-repeat: no-repeat;
 	width:100%;
@@ -237,7 +241,8 @@ div.nav-right a p{
 
 .boton{
 	vertical-align:middle;
-	margin: 20px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 	padding:20px;
 	background-color: #1D7257;
 	text-decoration: none;
