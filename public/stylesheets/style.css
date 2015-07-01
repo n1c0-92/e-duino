@@ -1,3 +1,4 @@
+/*generales*/
 body {
   font: 14px 'Open Sans', sans-serif;
   margin:0px;
@@ -31,32 +32,41 @@ footer{
 .center{
 	text-align: center;
 }
+.col{
+	float:left;
+}
+.col-2{
+	width: 50%;
+}
+/*alinear icono logo y texto*/
+.img-eduino-ico{
+	vertical-align: middle;
+}
+/*imagenes circulares*/
 .circular{
-	
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
+	display: inline-block;
 }
 .circular.user-img{
 	width: 50px;
 	height: 50px;
 	background: url(/images/mujer-2.jpg) no-repeat;
 	background-size: 150%;
-	display: inline-block;
+	
 	}
 .circular.answer-img{
 	width: 25px;
 	height: 25px;
 	background: url(/images/answer.png) no-repeat;
 	background-size: 100%;
-	display: inline-block;
 	}
 .circular.this-art-img{
 	width: 100px;
 	height: 100px;
 	background: url(/images/arduino-gemma.jpg) no-repeat;
 	background-size: 200%;
-	display: inline-block;
 }
 .your-kit-img{
 	width: 100px;
@@ -65,12 +75,14 @@ footer{
 	background-size: 200%;
 	display: inline-block;
 }
-.eduino{
-	background-color: #ccc
-	;
-	width: 20px;
-	height: 20px;
+.your-kit-img-carr{
+	width: 200px;
+	height: 200px;
+	background: url(/images/arduino-gemma.jpg) no-repeat;
+	background-size: 200%;
+	display: inline-block;
 }
+/*nav*/
 nav{
 	width:100%;
 	pointer-events:none;
@@ -80,12 +92,7 @@ nav{
 div.nav-right a p{
 	text-align: center;
 }
-.col{
-	float:left;
-}
-.col-2{
-	width: 50%;
-}
+
 .navs{
 	padding-left: 30px;
 	padding-right: 30px;
@@ -107,9 +114,6 @@ div.nav-right a p{
 .nav-left .tit-princ{
 	color:#ccc;
 }
-.img-eduino-ico{
-	vertical-align: middle;
-}
 .nav-right{
 	float:right;
 }
@@ -118,6 +122,10 @@ div.nav-right a p{
 	color:#ccc;
 	padding-top: 30px;
 }
+.nav-right a.tooltips{
+	padding-right: 15px;
+}
+/*section one*/
 .one{
 	background-image:url("/images/arduino_uno_test.jpg");
 
@@ -138,6 +146,12 @@ div.nav-right a p{
 }
 .one .center-label{
 	position: absolute;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 	font-size: 40px;
 	left: 50%;
 	top: 50%;
@@ -145,6 +159,7 @@ div.nav-right a p{
 	height: 200px;
 	margin: -150px 0 0 -200px;auto;
 }
+/*section two*/
 .two{
 	text-align: center;
 	height: 600px;
@@ -157,9 +172,6 @@ div.nav-right a p{
 }
 .two select option{
 	height: 40px;
-}
-.two .one, .two .two{
-	height: 100px;
 }
 .two-three img{
 	width: 30px;
@@ -238,7 +250,6 @@ div.nav-right a p{
 .modalbox h2{
 	text-align: center;
 }
-
 .boton{
 	vertical-align:middle;
 	margin-top: 20px;
@@ -252,14 +263,13 @@ div.nav-right a p{
 	text-decoration: none;
 	color:#fff;
 }
-/*tooltip*/
+/*tooltip help*/
 a.tooltips {
   position: relative;
   display: inline;
 }
 a.tooltips span {
   position: absolute;
-
   color: #FFFFFF;
   background: #000000;
   height: 100px;

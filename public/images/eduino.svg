@@ -2,9 +2,8 @@
 <!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="2000px" height="2000px" viewBox="0 0 2000 2000" enable-background="new 0 0 2000 2000" xml:space="preserve">
-<ellipse transform="matrix(0.766 -0.6428 0.6428 0.766 -316.1559 747.9254)" stroke="#FFFFFF" stroke-width="10" cx="869.376" cy="808.278" rx="44.529" ry="15.872"/>
-<circle stroke="#FFFFFF" stroke-width="10" cx="929.859" cy="780.842" r="54.669"/>
+	 width="532px" height="600px" viewBox="0 0 532 600" enable-background="new 0 0 532 600" xml:space="preserve">
+<ellipse transform="matrix(0.766 -0.6428 0.6428 0.766 -50.5142 105.7696)" cx="120.043" cy="122.278" rx="44.529" ry="15.872"/>
 <image overflow="visible" width="512" height="512" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABmJLR0QA/wD/AP+gvaeTAAAgAElE
 QVR4nO3debQlZX3u8e/pmaa7oWkRmQ8zgiMYQIQGAyxIBOMFYRFEGUUvJgYuMQQnuFETvCY3mphE
 ZVT0gqLiWlEUxSFwMRBRkMggU5idGBuaoaGb+0edvuw+nNO999lV9Xvrfb+ftd7VKrLP79TeXfXs
@@ -168,8 +167,13 @@ jGVAKY7lP01moDLg6k4hWTDRZCwDSnHcN2syA5UBJzsDYPlPa2IZUGrfKJb/tHp9lwEnexFZ/tOa
 WAaU2mf5T2vSdxlwshKg5T/1wzKg1B7Lf+pXX2XAiS4BWP5TvywDSu2x/Kd+9VUGnOhUkgUT9csy
 oNQe983qV19lwPFnACz/aVCWAaXmjWL5T4NZYxlw/IvJ8p8GZRlQap7lPw1qjWXA8SVAy3+aCsuA
 UnMs/2mqVlsGnNHzn7cF5gF3Nj2RsvMqqjNHS6MHkTK0K/AU7ps1uN2pzhytiB5EkiRJkiRJkiRJ
-kiRJkiRJkiRJkiQN5P8BybGg40+fQUsAAAAASUVORK5CYII=" transform="matrix(1 0 0 1 750.7053 756.7952)">
+kiRJkiRJkiRJkiQN5P8BybGg40+fQUsAAAAASUVORK5CYII=" transform="matrix(1 0 0 1 -1.2947 70.7952)">
 </image>
-<line fill="none" stroke="#FFFFFF" stroke-width="10" x1="989.818" y1="745.572" x2="866.372" y2="839.038"/>
-<text transform="matrix(1 0 0 1 930 1368)" display="none" font-family="'MyriadPro-Regular'" font-size="36">E-duino</text>
+<g display="none">
+	<path display="inline" d="M224.343,251.888c9.395,7.615,21.358,12.184,34.393,12.184c30.193,0,54.669-24.476,54.669-54.669
+		c0-7.669-1.585-14.965-4.436-21.589L224.343,251.888z"/>
+</g>
+<path d="M172.736,27.734c-30.193,0-54.669,24.476-54.669,54.669c0,17.158,7.91,32.462,20.276,42.485l84.626-64.074
+	C214.597,41.359,195.26,27.734,172.736,27.734z"/>
+<text transform="matrix(1 0 0 1 -42 480)" display="none" font-family="'MyriadPro-Regular'" font-size="36">E-duino</text>
 </svg>

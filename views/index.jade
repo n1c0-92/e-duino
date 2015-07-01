@@ -3,7 +3,7 @@ block content
 	nav
 		a(href="index")
 			.navs.nav-left
-				img.img-eduino-ico(src="/images/eduino3.svg") 
+				img.img-eduino-ico(src="/images/eduino.svg") 
 				.tit-princ
 					h1 E-duino
 		.navs.nav-right
@@ -15,7 +15,6 @@ block content
 	.modalmask(id="user")
 		.modalbox.movedown.center
 			a(href="#close", title="close", class="close") X
-
 			h2 Login
 			.log-user Usuario
 			.log-user-inp
@@ -40,6 +39,7 @@ block content
 					.this-art-tit
 						h3 Artículo seleccionado
 					.this-art-img.circular
+					h4 $1000
 				.descript
 					h3
 					h4
@@ -48,12 +48,13 @@ block content
 					.your-kit-tit
 						h3 Tu kit
 					.your-kit-img.circular
+					h4 $1000
 			.two-three
-				a(href="#Ancla")
+				a(href="#step-two")
 					h4 Ir al paso 2
-				a(href="#Ancla")
+				a(href="#step-two")
 					img(src="/images/abajo.png")
-		a(name="Ancla")
+		a(name="step-two")
 		section.two.wow.bounceInUp(data-wow-duration="2s", data-wow-delay="5s")
 			.two-one
 				h2 Paso 2
@@ -65,6 +66,7 @@ block content
 					.this-art-tit
 						h3 Artículo seleccionado
 					.this-art-img.circular
+					h4 $1000
 				.descript
 					h3
 					h4
@@ -73,11 +75,52 @@ block content
 					.your-kit-tit
 						h3 Tu kit
 					.your-kit-img.circular
+					h4 $1000
 			.two-three
-				h4 Ir al paso 3
-				img(src="/images/abajo.png")
+				a(href="#step-three")
+					h4 Ir al paso 3
+				a(href="#step-three")
+					img(src="/images/abajo.png")
+		a(name="step-three")
+		section.two.wow.bounceInUp(data-wow-duration="2s", data-wow-delay="5s")
+			.two-one
+				h2 Paso 3
+				h4 Elegí una placa
+				select
+					option Arduino 5sdfsdf
+			.two-two
+				.this-art.col.col-2
+					.this-art-tit
+						h3 Artículo seleccionado
+					.this-art-img.circular
+					h4 $1000
+				.descript
+					h3
+					h4
+					p
+				.your-kit.col.col-2
+					.your-kit-tit
+						h3 Tu kit
+					.your-kit-img.circular
+					h4 $1000
+			.two-three
+				a(href="#carrito")
+					h4 Ir al carrito
+				a(href="#carrito")
+					img(src="/images/abajo.png")
+		a(name="carrito")
+		section.two.wow.bounceInUp(data-wow-duration="2s", data-wow-delay="5s")
+			.two-one
+				h2 Carrito
+
+			.your-kit
+				.your-kit-tit
+					h3 Tu kit
+				.your-kit-img-carr.circular
+				h4 $1000
+
 	footer
 		.navs.nav-right
-			a.tooltips
+			a.tooltips.padd-bott-tool
 				span baje para seguir
 				.circular.answer-img

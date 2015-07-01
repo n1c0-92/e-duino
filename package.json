@@ -22,6 +22,11 @@
     "node-sass":"*"
 
   },
+  "window": {
+    "toolbar": false,
+    "width": 800,
+    "height": 500
+  },
   "description": "sdfsd",
   "main": "app.js",
   "devDependencies": {},
